@@ -1,0 +1,7 @@
+{
+  "name": "test1",
+  "dependencies": {},
+  "globalDependencies": {
+    "electron": "registry:env/electron#0.37.6+20160416165306"
+  }
+}

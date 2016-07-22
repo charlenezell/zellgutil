@@ -1,0 +1,32 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "fsd",
+  "main": "main.js",
+  "scripts": {
+    "server": "browser-sync start --config ./bs-config.js",
+    "wp": "webpack-dev-server --inline --hot",
+    "start": "electron ."
+  },
+  "author": "zell",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "electron": "^0.4.1",
+    "electron-prebuilt": "^1.2.5",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-loader": "^0.9.1",
+    "postcss-sprites": "^3.1.2",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5"
+  }
+}
