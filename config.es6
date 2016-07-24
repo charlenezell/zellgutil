@@ -47,10 +47,21 @@ let config = {
         }]
     }, {
         name: "服务器",
-        description: "拖入或输入文件路径启动随机的临时静态服务器"
+        description: "服务器创建",
+        menu:[{
+            name:"静态服务器",
+            description:"拖入或输入文件路径启动随机的临时静态服务器"
+        }]
     }, {
         name: "host切换",
-        description: "host切换工具"
+        description: "host切换工具",
+        menu:[{
+            name:"host1",
+            description:"切换host1"
+        },{
+            name:"host2",
+            description:"切换host2"
+        }]
     }, {
         name: "网络",
         description: "各种网络工具Util",

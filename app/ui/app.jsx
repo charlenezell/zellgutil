@@ -7,7 +7,18 @@ import StatusBar from "./StatusBar/main.jsx";
 let App = React.createClass({
     getInitialState: function () {
         return Object.assign({}, {
+            info:"",
             mainContent: this.props.defaultContent
+        });
+    },
+    handleMouseOverInfo:function(menu){
+        this.setState({
+            info:menu.description
+        });
+    },
+    handleMouseOutInfo:function(){
+        this.setState({
+            info:""
         });
     },
     taskItemClick: function (item, index) {
@@ -20,15 +31,13 @@ let App = React.createClass({
         return (
             <div className="l_w00">
                 <div className="l_top">
-                    <div className="l_w01">
-                        <div className="l_main" ref="main"></div>
-                        <div className="l_side">
-                            <Sidebar items={config.taskList} clickHandler={this.taskItemClick} />
-                        </div>
+                    <div className="l_main" ref="main"></div>
+                    <div className="l_side">
+                        <Sidebar items={config.taskList} clickHandler={this.taskItemClick} handleMouseOverInfo={this.handleMouseOverInfo} handleMouseOutInfo={this.handleMouseOutInfo}/>
                     </div>
                 </div>
                 <div className="l_btm">
-                    <StatusBar />
+                    <StatusBar info={this.state.info}/>
                 </div>
             </div>
         )
