@@ -1,0 +1,21 @@
+{
+  "name": "zellgutil",
+  "description": "fsd",
+  "main": "main.js",
+  "authors": [
+    "zell"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/charlenezell/zellgutil",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
