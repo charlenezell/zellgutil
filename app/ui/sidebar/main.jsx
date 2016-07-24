@@ -2,7 +2,7 @@ require("./main.css");
 var React = require('react');
 var ReactDOM = require('react-dom');
 var classNames=require("classnames");
-
+/*TODO: 绑定路由的转换*/
 let Sidebar=React.createClass({
     getInitialState:function(){
         return Object.assign({},{
